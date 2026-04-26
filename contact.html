@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Pet4Mate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="inner-page">
+    <div class="container py-4">
+      <nav class="navbar navbar-expand-lg px-0">
+        <a class="navbar-brand brand-mark" href="./index.html">Pet4Mate</a>
+        <button
+          class="navbar-toggler custom-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="menu-icon"><span></span><span></span><span></span></span>
+        </button>
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./blogs.html">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link active-link" href="./contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+            <li class="nav-item"><a class="btn btn-dark rounded-pill nav-cta" href="./signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <main class="section-space pt-3">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">Contact us</span>
+          <h1 class="inner-title inner-title-centered">We would love to hear from you.</h1>
+          <p>Send a support question, partnership idea, or feedback about your Pet4Mate experience.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <section class="form-card h-100">
+              <h2>Send us a message</h2>
+              <form class="app-form" action="./contact.html">
+                <div class="two-col">
+                  <div>
+                    <label for="contactName">Name</label>
+                    <input id="contactName" type="text" placeholder="Your name" required />
+                  </div>
+                  <div>
+                    <label for="contactEmail">Email</label>
+                    <input id="contactEmail" type="email" placeholder="you@example.com" required />
+                  </div>
+                </div>
+                <label for="contactTopic">Topic</label>
+                <input id="contactTopic" type="text" placeholder="Support, feedback, partnership..." required />
+
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="6" placeholder="Tell us how we can help" required></textarea>
+
+                <button class="btn btn-dark btn-lg rounded-pill w-100" type="submit">Send message</button>
+              </form>
+            </section>
+          </div>
+          <div class="col-lg-5">
+            <div class="stack-grid">
+              <section class="info-panel">
+                <h2>Support details</h2>
+                <div class="mini-list">
+                  <span>Email: hello@pet4mate.com</span>
+                  <span>Phone: +91 99999 99999</span>
+                  <span>Hours: Mon-Sat, 9 AM to 7 PM</span>
+                </div>
+              </section>
+              <section class="info-panel">
+                <h2>Need quick help?</h2>
+                <p>For login issues, matching concerns, or breeding profile edits, include your email and city in the message.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="footer-section pb-4">
+      <div class="container">
+        <div class="footer-card">
+          <div class="footer-bottom footer-bottom-single">
+            <span>&copy; 2026 Pet4Mate</span>
+            <span><a class="text-link" href="./signup.html">Create an account</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

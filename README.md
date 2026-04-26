@@ -1,29 +1,24 @@
-# 🐶 DogMate – Find the Perfect Partner for Your Dog
+# Pet4Mate - Meet Pet Friends Nearby
 
-**DogMate** is a responsive web app designed to help dog owners connect and find the perfect playdate, companion, or match for their furry friends.
+**Pet4Mate** is a responsive multi-page pet matching web app built to help pet owners find suitable nearby dog and cat mating partners and connect more easily.
 
-**DogMate** offers a sleek and user-friendly experience for dog lovers.
+It now includes a refreshed home page, stronger phone responsiveness, and dedicated pages for login, sign up, contact, and blogs.
 
----
+## Features
 
-## 🚀 Features
+- Responsive layout for mobile and desktop
+- Shared navigation across all pages
+- Dedicated `login`, `signup`, `contact`, and `blogs` pages
+- Improved footer and cleaner visual design
+- Built with HTML5, CSS3, and Bootstrap 5
 
-- 🔍 Search dogs by breed, age, and location
-- 📸 Upload photos and profiles of your dog
-- 💬 Message potential matches
-- 🐾 Responsive and mobile-friendly design
-- 🎨 Clean UI powered by Bootstrap
+## Project Structure
 
----
+- `index.html` - homepage
+- `login.html` - login page
+- `signup.html` - signup page
+- `contact.html` - contact page
+- `blogs.html` - blog page
+- `style.css` - shared styling
 
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- [Bootstrap 5](https://getbootstrap.com)
-
----
-
-Made with ❤️ by Rohit Shandilya
-Feel free to connect or contribute!
-
+Made by Rohit Shandilya
