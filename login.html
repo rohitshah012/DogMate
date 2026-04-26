@@ -64,7 +64,8 @@
           <div class="col-lg-7">
             <section class="form-card h-100">
               <h2>Login to your account</h2>
-              <form class="app-form" action="./index.html">
+              <form id="loginForm" class="app-form" action="./index.html">
+                <p id="loginMessage" class="form-message" aria-live="polite"></p>
                 <label for="loginEmail">Email address</label>
                 <input id="loginEmail" type="email" placeholder="you@example.com" required />
 
@@ -103,5 +104,6 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

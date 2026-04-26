@@ -64,7 +64,8 @@
           <div class="col-lg-7">
             <section class="form-card h-100">
               <h2>Create your account</h2>
-              <form class="app-form" action="./login.html">
+              <form id="signupForm" class="app-form" action="./login.html">
+                <p id="signupMessage" class="form-message" aria-live="polite"></p>
                 <div class="two-col">
                   <div>
                     <label for="fullName">Full name</label>
@@ -144,5 +145,6 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

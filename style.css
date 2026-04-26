@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -116,6 +117,7 @@ a {
 
 .hero-section {
   padding-bottom: 2.5rem;
+  overflow: hidden;
 }
 
 .hero-glow {
@@ -166,6 +168,30 @@ a {
 
 .nav-cta {
   padding-inline: 1.3rem;
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.user-name {
+  max-width: 180px;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logout-btn {
+  padding: 0.45rem 1rem;
+  font-weight: 700;
 }
 
 .custom-toggler {
@@ -597,6 +623,32 @@ a {
   margin: 1rem 0 0;
 }
 
+.form-message {
+  display: none;
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.form-message.success,
+.form-message.error {
+  display: block;
+}
+
+.form-message.success {
+  color: #17613a;
+  background: rgba(39, 174, 96, 0.12);
+  border: 1px solid rgba(39, 174, 96, 0.2);
+}
+
+.form-message.error {
+  color: #9f2634;
+  background: rgba(240, 75, 87, 0.12);
+  border: 1px solid rgba(240, 75, 87, 0.2);
+}
+
 .mini-list {
   display: grid;
   gap: 0.9rem;
@@ -682,6 +734,23 @@ a {
     background: rgba(255, 255, 255, 0.92);
     border: 1px solid var(--line);
   }
+
+  .user-nav {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-top: 0.6rem;
+  }
+
+  .user-name,
+  .logout-btn {
+    width: 100%;
+  }
+
+  .user-name {
+    max-width: none;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -725,12 +794,22 @@ a {
     flex-direction: column;
   }
 
+  .footer-bottom {
+    align-items: flex-start;
+  }
+
   .two-col {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 575.98px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .container {
     padding-inline: 1.15rem;
   }
@@ -742,6 +821,8 @@ a {
 
   .hero-visual {
     padding-inline: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .phone-shell {
@@ -774,5 +855,49 @@ a {
   .form-card,
   .info-panel {
     padding: 1.4rem;
+  }
+
+  .footer-section {
+    padding-top: 0;
+  }
+
+  .footer-card {
+    border-radius: 24px;
+  }
+
+  .footer-card .row {
+    --bs-gutter-y: 1.7rem;
+  }
+
+  .footer-card p {
+    margin-bottom: 0;
+    line-height: 1.7;
+  }
+
+  .footer-title {
+    margin-bottom: 0.7rem;
+  }
+
+  .footer-links-column {
+    gap: 0.55rem;
+  }
+
+  .footer-links a,
+  .footer-note {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    line-height: 1.55;
+  }
+
+  .footer-links a {
+    display: inline-flex;
+    padding-block: 0.15rem;
+  }
+
+  .footer-bottom {
+    gap: 0.45rem;
+    margin-top: 1.6rem;
+    padding-top: 1rem;
+    line-height: 1.55;
   }
 }
